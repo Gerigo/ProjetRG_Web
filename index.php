@@ -1,7 +1,10 @@
 <?php
-include ('./admin/lib/php/adm_liste_include.php');
-$cnx = Connexion::getInstance($dsn, $user, $pass);
+/*
+require './admin/lib/php/adm_list_include.php';
+$cnx = Connexion :: getInstance($dsn, $user, $pass);
 session_start();
+ * 
+ */
 ?>
 <html>
     <head>
@@ -66,7 +69,7 @@ session_start();
                                 include ($path);
                             } else {
                                 ?>
-                                <span class="lefcolumn">Contenu utile</span>
+                                <span class="lefcolumn">Page introuvable</span>
                                 <meta http-refresh: Content="1;url=index.php?page=accueil"/>
                                 <?php
                             }

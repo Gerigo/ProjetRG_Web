@@ -69,19 +69,25 @@ h2{
 .footer {
     padding: 10px;
     text-align: center;
-    background: #ddd;
+    background: white;
     margin-top: 20px;
     margin: 80px; 
+    border-width:2px;
+    border-style:groove;
+    border-color:black;
+
+
 }
 
 
 
 ul {
     list-style-type: none;
-    margin-bottom : 30;
+    margin-bottom : 20;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+
 }
 
 li {
@@ -139,7 +145,8 @@ li.dropdown {
 
     font-size: 22;
     text-align : center; 
-    margin-bottom : 5px; 
+    margin-bottom : 15px; 
+    margin-left:170px;
     border-width:1px;
     border-style:dotted;
     border-color:black;
@@ -147,11 +154,11 @@ li.dropdown {
 
 #tdces{
 
-
     font-size : 29; 
-    text-align : right; 
-    color : #DFA246;
+    text-align : center; 
+    color : white;
     font-weight : bolder;
+    margin-bottom: 5px; 
 
 
 }
@@ -159,12 +166,24 @@ li.dropdown {
 #cadre{
     border-width:2px;
     border-style:groove;
-    border-color:black;
     font-size : 15px; 
-    margin-left: 120px;
-    border-color : #595D5C;
-    background-color :#ddd; 
+    margin-left: 30px;
+    border-color : #F7C27C;
+    background-color :#F7C27C; 
 
+
+}
+
+
+#cadre1{
+    margin-left: 65px; 
+    border-width:2px;
+    border-style:groove;
+    border-color:black;
+    font-size : 15px;  
+    border-color : #ddd;
+
+    background : #ddd; 
 
 }
 
@@ -174,7 +193,8 @@ li.dropdown {
     border-style:groove;
     border-color:black;
     font-size : 15px; 
-    margin-left: 120px;
+    margin-left: 30px;
+    background-color:#ddd; 
     border-color : #595D5C;
 }
 
@@ -186,5 +206,19 @@ li.dropdown {
     text-align : center; 
     border-color : #595D5C;
     font-weight: bolder; 
+
+}
+
+
+#cadrearticle{
+
+    margin-left: 65px; 
+    border-width:2px;
+    border-style:groove;
+    border-color:black;
+    font-size : 15px; 
+    border-color : white;
+
+    background :	#ddd;; 
 
 }
