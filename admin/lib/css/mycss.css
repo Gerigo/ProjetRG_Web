@@ -150,6 +150,8 @@ li.dropdown {
     border-width:1px;
     border-style:dotted;
     border-color:black;
+    color : white; 
+    background-color: #333; 
 }
 
 #tdces{
@@ -168,8 +170,8 @@ li.dropdown {
     border-style:groove;
     font-size : 15px; 
     margin-left: 30px;
-    border-color : #F7C27C;
-    background-color :#F7C27C; 
+    border-color : black; 
+    background-color :#ddd; 
 
 
 }
@@ -203,8 +205,10 @@ li.dropdown {
     border-style:groove;
     border-color:black;
     font-size : 15px; 
+    color: white; 
     text-align : center; 
-    border-color : #595D5C;
+    border-color:black;
+    background-color :#333; 
     font-weight: bolder; 
 
 }
@@ -218,7 +222,25 @@ li.dropdown {
     border-color:black;
     font-size : 15px; 
     border-color : white;
+    background :#ddd;; 
 
-    background :	#ddd;; 
+}
 
+#note{
+    
+    font-size: 11px; 
+    text-align : right; 
+    font-weight:italic; 
+}
+
+#inscription, #connexion{  
+    color :black;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+#form_inscription, #form_connexion{ 
+    margin-bottom: 150px;
+    margin-left : 40px;
+    text-align : center; 
 }

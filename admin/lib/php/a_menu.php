@@ -1,5 +1,3 @@
-
-
 <div class="topnav">
     <ul>
         <li><a href="./index.php?page=accueil">Home</a></li>
@@ -14,8 +12,19 @@
             </div>
 
         </li>
-        <li><a href="./index.php?page=faq">FAQ</a></li>
-        <li><a href="./index.php?page=reservation">Help</a></li>
+        <li class="dropdown">
+            <a href="./index.php?page=reservation" class="dropbtn">Se connecter</a>
+            <div class="dropdown-content">
+
+                <a href="./pages/disconnect.php">Déconnexion</a>
+                <a href="./admin/index.php">Administration</a>
+
+            </div>
+
+        </li>
+       
+
+
     </ul>
 </div>
 

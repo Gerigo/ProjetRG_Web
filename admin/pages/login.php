@@ -1,9 +1,9 @@
-<h2>Login administration</h2>
+<h1>Login administration</h1>
 <?php
 if (isset($_GET['submit_login'])) {
     //pour pouvoir utiliser les donnes hors du tab $_get
     extract($_GET, EXTR_OVERWRITE);
-    $log = new Admin_pensionbd($cnx);
+    $log = new Admin($cnx);
     $admin = $log->getAdmin($admin, $password);
     var_dump($admin);
     if (is_null($admin)) {

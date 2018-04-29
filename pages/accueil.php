@@ -36,6 +36,8 @@
 
 
                 <img class="d-block w-100" src="./admin/images/gameover.png" alt="Premier">
+                </br>
+                <div id ="note"> Article écrit le 28/04/18 à 21:22</div>
             </div>
             <div class="col-sm-4" id = "cadre2">
                 <div id="gt_carousel" class="carousel slide" data-ride="carousel">
@@ -107,6 +109,11 @@
                     <b> 30/10 - 01/11 </b> : Game Arena à Valenciennes
                     </br>
                     <b> 30/11 - 01/12 </b> : ES3 Nintendo Convention
+                    </br>
+                    </br>
+                    </br>
+                    </br>
+                    <div id ="note"> Article écrit le 27/04/18 à 11:22</div>
                 </div> 
 
             </div>
@@ -147,6 +154,7 @@
 
                 </br>
                 </br>
-                <i> Article tiré de jeuxvideo.com </i>
+                <i> Article tiré de jeuxvideo.com </i> 
+                <div id ="note"> écrit le 27/04/18 à 11:22</div>
             </div>
         </div>
