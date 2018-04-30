@@ -24,6 +24,7 @@ session_start();
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" ></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
         <script src="admin/lib/js/gt_functions.js"></script>
+        
 
         <meta charset="utf8"/>
 

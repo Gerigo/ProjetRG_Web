@@ -11,18 +11,17 @@ class ClientDB extends Client {
 
     public function addClient(array $data) {
 
-        $query = "insert into client (nom,prenom,mdp,mail,ad,loc,tel"."values (:nom,:prenom,:password,:mail,:ad,:loc,:tel";
+        $query = "insert into client (nom,prenom,mdp,adresse,ville,tel,mail) values (:nom,:prenom,:mdp,:adresse,:ville,:tel,:mail)";
 
         try {
             $resultset = $this->_db->prepare($query);
             $resultset->bindValue(':nom', $data['nom'], PDO::PARAM_STR);
             $resultset->bindValue(':prenom', $data['prenom'], PDO::PARAM_STR);
-            $resultset->bindValue(':password', $data['password'], PDO::PARAM_STR);
-            $resultset->bindValue(':mail', $data['mail'], PDO::PARAM_STR);
-            $resultset->bindValue(':ad', $data['ad'], PDO::PARAM_STR);
-            $resultset->bindValue(':loc', $data['loc'], PDO::PARAM_STR);
-            $resultset->bindValue(':cp', $data['cp'], PDO::PARAM_STR);
+            $resultset->bindValue(':mdp', $data['mdp'], PDO::PARAM_STR);
+            $resultset->bindValue(':adresse', $data['adresse'], PDO::PARAM_STR);
+            $resultset->bindValue(':ville', $data['ville'], PDO::PARAM_STR);
             $resultset->bindValue(':tel', $data['tel'], PDO::PARAM_STR);
+            $resultset->bindValue(':mail', $data['mail'], PDO::PARAM_STR);
             $resultset->execute();
             //$retour = $resultset->fetchColumn(0);
             //return $retour;
@@ -32,18 +31,18 @@ class ClientDB extends Client {
         }
     }
     
-    function isClient($email, $mdp) {
+    function isClient($mail, $mdp) {
         try {
-            $query = "select * from client where mail = :mail and password = :password";
+            $query = "select * from client where mail = :mail and mdp = :mdp";
             $resultset = $this->_db->prepare($query);
             $resultset->bindValue(':mail', $mail);
-            $resultset->bindValue(':password', $password);
+            $resultset->bindValue(':mdp', $mdp);
             $resultset->execute();
             $data = $resultset->fetch();
             if (!empty($data)) {
                 try {
                     $_client[] = new Client($data);
-                    if ($_client[0]->mail == $mail && $_client[0]->password == $password) {
+                    if ($_client[0]->mail == $mail && $_client[0]->mdp ==$mdp ) {
                         return $_client;
                     } else {
                         return null;

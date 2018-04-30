@@ -1,28 +1,34 @@
-<h1>Login administration</h1>
-<?php
-if (isset($_GET['submit_login'])) {
-    //pour pouvoir utiliser les donnes hors du tab $_get
-    extract($_GET, EXTR_OVERWRITE);
-    $log = new Admin($cnx);
-    $admin = $log->getAdmin($admin, $password);
-    var_dump($admin);
-    if (is_null($admin)) {
-        print "<br/>Données incorrectes";
-    } else {
-        $_SESSION['admin'] = 1;
-        unset($_SESSION['page']);
+<h2>Login administration</h2>
 
-        print "<meta http-equiv=\"refresh\": Content=\"0;URL=../index.php\">";
+<?php
+if(isset($_GET['submit_login'])){
+    
+    //var_dump($_GET);
+    //pour pouvoir utiliser les donnes hors du tab $_get
+    extract($_GET,EXTR_OVERWRITE);
+    $log= new AdminDB($cnx);
+    //var_dump($log); 
+    $admin=$log->getAdmin($admin, $password);
+    //var_dump($admin);
+    if(is_null($admin)){
+        print "<br/>Données incorrectes";
+    }
+    else
+    {
+        $_SESSION['admin']=1;
+        unset($_SESSION['page']);
+        
+        //print "<meta http-equiv=\"refresh\": Content=\"0;URL=../index.php\">";
     }
 }
 ?>
 
 
-<form action=""<?php print $_SERVER['PHP_SELF']; ?> method="get">
+<form action=""<?php print $_SERVER['PHP_SELF'];?> method="get">
     Login : 
-    <input type="text", name="admin", id="admin"/><br/>
+    <input type="text" name="admin" id="admin"/><br/>
     Password : 
-    <input type="password", name="password", id="password"/><br/>
-    <input type="submit", name="submit_login", id="submit_login", value="Se connecter"/><br/>
+    <input type="password" name="password" id="password"/><br/>
+    <input type="submit" name="submit_login" id="submit_login" value="Se connecter"/><br/>
 
 </form>

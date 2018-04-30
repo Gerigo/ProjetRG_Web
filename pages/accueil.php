@@ -43,16 +43,34 @@
                 <div id="gt_carousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="./admin/images/gta.png" alt="Premier">
+                            <img class="d-block w-100" src="./admin/images/gta.png" alt="image1">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/cod.png" alt="Deuxieme">
+                            <img class="d-block w-100" src="./admin/images/cod.png" alt="image2">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/fc.png" alt="Troisieme">
+                            <img class="d-block w-100" src="./admin/images/fc.png" alt="image3">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/ac.png" alt="Quatrieme">
+                            <img class="d-block w-100" src="./admin/images/ac.png" alt="image4">
+                        </div>
+                         <div class="carousel-item">
+                            <img class="d-block w-100" src="./admin/images/dbz.png" alt="image5">
+                        </div>
+                         <div class="carousel-item">
+                            <img class="d-block w-100" src="./admin/images/gow.png" alt="image6">
+                        </div>
+                         <div class="carousel-item">
+                            <img class="d-block w-100" src="./admin/images/mh.png" alt="image7">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./admin/images/fc5.png" alt="image8">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./admin/images/rdd.png" alt="image9">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="./admin/images/yakuza.png" alt="image10">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#gt_carousel" role="button" data-slide="prev">

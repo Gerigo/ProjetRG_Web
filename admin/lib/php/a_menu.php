@@ -1,6 +1,6 @@
 <div class="topnav">
     <ul>
-        <li><a href="./index.php?page=accueil">Home</a></li>
+        <li><a href="./index.php?page=accueil">Home administration</a></li>
         <li><a href="./index.php?page=reservation">Commander</a></li>
         <li><a href="./index.php?page=reservation">Contact</a></li>
         <li class="dropdown">
@@ -17,7 +17,7 @@
             <div class="dropdown-content">
 
                 <a href="./pages/disconnect.php">Déconnexion</a>
-                <a href="./admin/index.php">Administration</a>
+                <a href="../index.php?page=accueil">Retour index</a>
 
             </div>
 

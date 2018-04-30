@@ -3,34 +3,37 @@
 class AdminDB extends Admin {
 
     private $_db;
-    private $_admin = array();
+    private $_array = array();
 
     public function __construct($db) {
         $this->_db = $db;
     }
 
-    function isAdmin($login, $mdp) {
+    public function getAdmin($admin, $password) {
+
+        // print "test"; 
+        //print $admin." ".$password." "; 
+
         try {
-            $query = "select * from admin where aname = :aname and mdp = :mdp";
+            $query = "select * from admin where admin = :admin and password=:password";
             $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':aname', $login);
-            $resultset->bindValue(':mdp', $mdp);
+           // $password = password_hash($password, $algo);
+            $resultset->bindValue(':admin', $admin);
+            $resultset->bindValue(':password', $password);
             $resultset->execute();
-            $data = $resultset->fetch();
-            if (!empty($data)) {
-                try {
-                    $_admin[] = new Admin($data);
-                    if ($_admin[0]->aname == "$aname" && $_admin[0]->mdp == $mdp) {
-                        return $_admin;
-                    } else {
-                        return null;
-                    }
-                } catch (PDOException $e) {
-                    print $e->getMessage();
-                }
+         //   var_dump($resultset);
+            while ($data = $resultset->fetch()) {
+                $_array[] = new Admin($data);
+                //  var_dump($_array);
             }
         } catch (PDOException $e) {
-            print "Echec de la connexion" . $e->getMessage();
+            print $e->getMessage();
+        }
+        if (!empty($_array)) {
+            return $_array;
+        } else {
+            return null;
         }
     }
+
 }

@@ -1,11 +1,12 @@
 <?php
 
-class Admin{
+class Admin {
 
   private $_attributs = array();
   
   public function __construct(array $data) {
       $this->hydrate($data);
+     // print "coucou"; 
   }   
   //hydrate
   public function hydrate(array $data) {

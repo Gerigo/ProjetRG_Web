@@ -1,4 +1,5 @@
-<h3 id="titre_connexion">Connexion </h3>
+<div class="col-sm-9" id="cadreconnect">
+    </br><h3 id="titre_connexion">Connexion </h3>
 <?php
 if (isset($_POST['envoyer2'])) {
     $log = new ClientDB($cnx);
@@ -7,9 +8,9 @@ if (isset($_POST['envoyer2'])) {
         
     } else {
         $_SESSION['client'] = 1;
-        $_SESSION['mon_client'] = $client[0]->ID_CLIENT;
+        $_SESSION['client'] = $client[0]->ID_CLI;
         ?>
-        <meta http-equiv = "refresh": content = "0;url=index.php?page=accueil.php">
+        <meta http-equiv = "refresh": content = "0;url=index.php?page=accueil">
         <?php
     }
 }
@@ -18,11 +19,12 @@ if (isset($_POST['envoyer2'])) {
 <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post" id="form_connexion">
     <div class="row">
         <div class="col-sm-2"></div>
-        <div class="col-sm-4">
-            <input type="email" id="email3" name="email3" size="30" placeholder="Votre email"/>
+        <div class="col-sm-4"> 
+           <b>Entrez votre e-mail : </b><input type="email" id="email3" name="email3" size="30" placeholder="Votre email"/>
         </div>
-        <div class="col-sm-4">
-            <input type="password" id="mdp3" name="mdp3" size="30" placeholder="Votre mot de passe"/>
+        </br>
+        <div class="col-sm-6">
+            <b>Entrez votre mdp :</b> <input type="password" id="mdp3" name="mdp3" size="30" placeholder="Votre mot de passe"/>
         </div>
     </div>
     </br></br>
@@ -36,3 +38,4 @@ if (isset($_POST['envoyer2'])) {
         </div>
     </div>
 </form>
+</div>

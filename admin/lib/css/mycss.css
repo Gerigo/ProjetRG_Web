@@ -244,3 +244,20 @@ li.dropdown {
     margin-left : 40px;
     text-align : center; 
 }
+
+#titre_connexion{
+    
+    text-align : center; 
+    margin-bottom: 70px; 
+}
+#cadreconnect{
+    display : center; 
+    border-width:1px;
+    border-style:groove;
+    font-size : 15px; 
+    margin-left: 230px;
+    border-color : black; 
+    background-color :#ddd; 
+   text-color : #3C3333;
+
+}
