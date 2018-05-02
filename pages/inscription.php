@@ -1,83 +1,81 @@
-   <div class="col-sm-11" id="cadreconnect"> <h3 id="inscription">Formulaire d'inscription </h3>
-
 <?php
 if (isset($_GET['envoyer'])) {
-    //permet d'extraire les champs du tableau $_GET pour simplifier
     extract($_GET, EXTR_OVERWRITE);
+
     $client = new ClientDB($cnx);
     //var_dump($_GET);
     $client->addClient($_GET);
-    $reussi = "Inscription cloturée avec succès ";
+    ?>
+    <meta http-equiv = "refresh": content = "1;url=index.php?page=accueil">
+    <?php
 }
 ?>
 
+<!-- REGISTRATION FORM -->
+<div class="text-center" style="padding:50px">
+    <div class="logo">Inscription</div>
+    <!-- Main Form -->
+    <div class="login-form-1">
+        <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get" id="form_inscription">
+            <form id="register-form" class="text-left">
+                <div class="login-form-main-message"></div>
+                <div class="main-login-form">
+                    <div class="login-group">
 
-<form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get" id="form_inscription">
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4">
-            <input type="text" id="nom" name="nom" size="30" placeholder="Votre nom"/>
-        </div>
-        <div class="col-sm-4">
-            <input type="text" id="prenom" name="prenom" size="30" placeholder="Votre prénom"/>
-        </div>
+                        <div class="form-group">
+                            <label for="nom" class="sr-only">Nom</label>
+                            <input type="text" class="form-control" id="nom" name="nom" size="30" placeholder="Nom">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="prenom" class="sr-only">Prénom</label>
+                            <input type="text" class="form-control" id="prenom" name="prenom" placeholder="Prénom">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mdp" class="sr-only">Mot de passe</label>
+                            <input type="password" id="mdp" class="form-control" name="mdp" placeholder="Mot de passe">
+                        </div>
+                        <div class="form-group">
+                            <label for="mdp2" class="sr-only">Confirmez le mot de passe</label>
+                            <input type="password" id="mdp2" class="form-control" name="mdp2" placeholder="Confirmez le mot de passe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="adresse" class="sr-only">Adresse</label>
+                            <input type="text" class="form-control" type="text" id="adresse" name="adresse" placeholder="Adresse">
+                        </div>
+                        <div class="form-group">
+                            <label for="ville" class="sr-only">Ville</label>
+                            <input type="text" class="form-control" id="ville" name="ville" placeholder="Ville">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel" class="sr-only">Numéro de téléphone</label>
+                            <input type="text" class="form-control" id="tel" name="tel" placeholder="Téléphone">
+                        </div>
+                        <div class="form-group">
+                            <label for="reg_username" class="sr-only">Adresse e-mail</label>
+                            <input type="email" id="mail" class="form-control" name="mail" placeholder="Adresse email">
+                        </div>
+                        <div class="form-group">
+                            <label for="reg_email" class="sr-only">Confirmez l'email</label>
+                            <input type="email" id="email2" class="form-control" name="email2" placeholder="Confirmez l'email">
+                        </div>
+
+
+                        <div class="form-group login-group-checkbox">
+                            <input type="checkbox" class="" id="reg_agree" name="reg_agree">
+                            <label for="reg_agree">J'accepte les <a href="#">termes</a></label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="login-button" name="envoyer" id="envoyer" value="Envoyer"><i class="fa fa-chevron-right"></i></button>
+                </div>
+                <div class="etc-login-form">
+                    <p>Déjà un compte ?<a href="./index.php?page=connexion">Se connecter</a></p>
+                </div>
+            </form>
     </div>
-    </br>
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4">
-            <input type="email" id="mail" name="mail" size="30" placeholder="Votre email"/>
-        </div>
-        <div class="col-sm-4">
-            <input type="email" id="email2" name="email2" size="30" placeholder="Confirmez votre email"/>
-        </div>
-    </div>
-    </br>
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4">
-            <input type="password" id="mdp" name="mdp" size="30" placeholder="Mot de passe"/>
-        </div>
-        <div class="col-sm-4">
-            <input type="password" id="mdp2" name="mdp2" size="30" placeholder="Confirmez votre mot de passe"/>
-        </div>
-    </div>
-    </br>
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4">
-            <input type="text" id="adresse" name="adresse" size="30" placeholder="Votre adresse"/>
-        </div>
-        <div class="col-sm-4">
-            <input type="text" id="ville" name="ville" size="30" placeholder="Votre ville"/>
-        </div>
-    </div>
-    </br>
-    <div class="row">
-    
-        <div class="col-sm-8">
-            <input type="text" id="tel" name="tel" size="30" placeholder="+32    "/>
-        </div>
-    </div>
-    </br></br>
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-2">
-            <input type="submit" name="envoyer" id="envoyer" value="Envoyer" class="pull-right">&nbsp;  
-        </div>
-        <div class="col-sm-6">
-            <input type="reset" id="reset" value="Annuler" class="pull-right"/>
-        </div>
-    </div>
-    <div class="row form_reussi">
-        <div class="col-sm-1"></div>
-        <div class="col-sm-4 reussi">
-<?php
-if (isset($reussi)) {
-    print $reussi;
-}
-?>
-        </div>
-    </div>
-</form>
-   </div>
+    <!-- end:Main Form -->
+</div>

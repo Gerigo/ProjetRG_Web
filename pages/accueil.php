@@ -1,178 +1,72 @@
+<div class="row"> </br> </div>
 
 
-<h1 id="titre"> Bienvenue sur le site n°1 en matière de jeux vidéos <h1>
-
-
-
-
-        <div class="row">
-            </br>
-        </div>
-        <div class ="row">
-            <div class="col-sm-3" id="cadre"> 
-                </br>
-                <div id ="cadre3"> Le coin des devs </div>
-                </br>
-                Découvrez les dernière tendances en 
-                exclusivité sur <b>Retro-Gaming</b>
-                </br>
-                </br>
-                Dès aujourd'hui et jusqu'au <b>15/06</b>
-                bénéficiez de <b>15%</b> de réduction sur 
-                vos commandes en lignes. 
-                </br>
-                </br>
-                Valable sur tous les jeux, toutes 
-                les consoles et sans minimum 
-                d'achat. 
-                </br> </br>
-                Indiquez le code promo <b>EXAM</b> lors de la 
-                finalisation de la commande 
-                </br> </br>
-                </br>
-                <b> L'équipe Retro-Gaming</b>
-                </br>
-                </br>
-
-
-                <img class="d-block w-100" src="./admin/images/gameover.png" alt="Premier">
-                </br>
-                <div id ="note"> Article écrit le 28/04/18 à 21:22</div>
-            </div>
-            <div class="col-sm-4" id = "cadre2">
-                <div id="gt_carousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="./admin/images/gta.png" alt="image1">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/cod.png" alt="image2">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/fc.png" alt="image3">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/ac.png" alt="image4">
-                        </div>
-                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/dbz.png" alt="image5">
-                        </div>
-                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/gow.png" alt="image6">
-                        </div>
-                         <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/mh.png" alt="image7">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/fc5.png" alt="image8">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/rdd.png" alt="image9">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/yakuza.png" alt="image10">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#gt_carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#gt_carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-
-                </div> 
-
-            </div>
-
-
-            <div class="col-sm-4" id = "cadre">
-                </br>
-                <div id ="cadre3"> News et événements </div>
-                </br>
-                <div id="gt_carousel2" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="d-block w-100" src="./admin/images/nintendo.png" alt="Premier">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/rouen.png" alt="Deuxieme">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/gaming.png" alt="Troisieme">
-                        </div>
-                        <div class="carousel-item">
-                            <img class="d-block w-100" src="./admin/images/arena.png" alt="Quatrieme">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#gt_carousel2" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#gt_carousel2" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    </br>
-                    </br>
-                    Ne manquez pas les derniers événements en matière de jeux vidéos. 
-                    </br>
-                    </br> 
-
-                    <b> 1/07 - 02/07 </b> : Rouen gaming festival
-                    </br>
-                    <b> 10/07 au 16/07 </b> : Gaming Zone à Casablanca
-                    </br>
-                    <b> 30/10 - 01/11 </b> : Game Arena à Valenciennes
-                    </br>
-                    <b> 30/11 - 01/12 </b> : ES3 Nintendo Convention
-                    </br>
-                    </br>
-                    </br>
-                    </br>
-                    <div id ="note"> Article écrit le 27/04/18 à 11:22</div>
-                </div> 
-
-            </div>
-        </div>
-
-
-
-        <div class="row">
-            </br>
-
-        </div>
-
-
-        <div class="row">      
-
-            <div class="col-sm-12" id="cadrearticle"> 
-                </br>
-                <div id ="cadre3"> Dernier article : Les jeux vidéos rendents-ils violents ?  </div>
-                </br>
-                Les jeux vidéo ont la réputation d’être violents et débilitants. </br>
-                Pourtant, de récentes études montrent qu’ils améliorent des capacités cognitives différentes selon le type de jeu. </br>
-                Les risques pour la santé restent très limités et peuvent facilement être évités.</br>
-                </br></br>
-                Depuis la sortie de Pong en 1972, les jeux vidéo n’ont cessé de s’améliorer et de se diversifier. </br>
-                Certains font partie de notre patrimoine culturel, comme Space Invaders, Pac-Man ou Tetris.</br></br>
-                Avec les jeux vidéo d’aujourd’hui, il est possible d’incarner tour à tour un sportif, un psychanalyste, une mère de famille, un pilote de chasse, un chirurgien, un soldat…
-                Leurs décors peuvent nous immerger dans des lieux contemporains, historiques ou mythiques, dans une représentation métaphorique du cerveau ou dans des univers oniriques délirants. </br>
-                Ils nous proposent de perfectionner notre anglais, de mesurer l’âge de notre cerveau, d’apprendre à cuisiner, à danser ou à jouer de la guitare… Ils représentent une pratique ludique d’une grande richesse qui se développe de plus en plus auprès d’une clientèle qui s’élargit.
-                Malgré son succès fulgurant et les nombreuses possibilités qu’il peut offrir, le jeu vidéo n’a pas toujours bonne image. </br>
-                </br>
-                En effet, certains jeux sont souvent décriés pour la violence qui les caractérise, lorsque le but est de tirer sur tout ce qui bouge sans complexe et que le carnage qui en résulte est de surcroît très réaliste. 
-                Ils sont souvent également jugés « abrutissants » et ont la réputation d’enfermer certains de leurs utilisateurs dans une pratique toxicomaniaque conditionnée (appuyer sur tel bouton en réponse à telle stimulation). 
-                L’adolescent – car c’est de lui dont il s’agit le plus souvent – risquerait de finir au pire psychotique, au mieux violent, « déconnecté » de la société et de ses valeurs, victime en prime de crises d’épilepsie. Cependant, les jeux vidéo – et l’informatique en général – font maintenant partie de notre vie quotidienne et il devient difficile pour les parents qui le souhaitent d’en détourner leurs enfants (en 2002, selon un sondage Sofres, plus de 80 % des enfants âgés entre 8 et 14 ans déclaraient pratiquer les jeux multimédias). 
-                Contrairement à l’opinion des personnes méfiantes face aux jeux vidéo, les résultats des recherches conduites ces dernières années sur ce sujet ont plutôt tendance à montrer que les risques sont faibles et circonscrits, bien que présents et par conséquent non négligeables. 
-                Mais plus étonnant encore, il semble que les jeux vidéo seraient bénéfiques, 
-                en ce sens qu’ils amélioreraient certaines capacités cognitives de leurs utilisateurs réguliers.
-
-
-                </br>
-                </br>
-                <i> Article tiré de jeuxvideo.com </i> 
-                <div id ="note"> écrit le 27/04/18 à 11:22</div>
-            </div>
+<div class="card-columns">
+  <div class="card ">
+    <img class="card-img-top" src="./admin/images/gta.png" alt="gta">
+    <div class="card-body">
+      <h5 class="card-title">Sortie du nouveau GTA5 </h5>
+      <p class="card-text">Quinzième jeu de la série en comptant les contenus additionnels et 
+          les épisodes portables, GTA V est le cinquième volet officiel de la saga ainsi que le second opus de la franchise à cheval sur deux générations de consoles</p>
+    </div>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>GTA est certainement la saga qui a su le plus imposer son style toutes plateformes confondues</p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          PDG de JVC <cite title="Source Title">JeuxVideo.com</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    
+    <div class="card-body">
+      <h5 class="card-title">On l'attendait, le voilà enfin</h5>
+      <p class="card-text">Avec son scénario extrêmement original, Far Cry 5 se présentait comme l'épisode capable de renouveler la série entièrement. Si en termes de gameplay, c'est une réussite, Ubisoft nous avait annoncé peu après le lancement que les affaires marchaient bien elles aussi.</p>
+      <p class="card-text"><small class="text-muted">Dernière modification il y a 3 heures</small></p>
+      <img class="card-img-top" src="./admin/images/fc.png" alt="Card image cap">
+    </div>
+  </div>
+  <div class="card bg-danger text-white text-center p-3">
+    <blockquote class="blockquote mb-0">
+      <p> FIFA 18 est-il le pire opus de tous les temps ? C’est la question qui est très sérieusement posée depuis maintenant plusieurs mois...
+      </p>
+      <footer class="blockquote-footer">
+        <small>
+          Someone famous in <cite title="Source Title">Dexerto.com</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Grosse mise à jour pour PUBG</h5>
+      <p class="card-text">Les joueurs seront ravis, PUBG a annoncé sa grosse mise à jour pour le 03/05/18</p>
+      <p class="card-text"><small class="text-muted">Annoncé il y a 1 heure</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img" src="./admin/images/annonce.jpg" alt="Card image">
+  </div>
+  <div class="card p-3 text-right">
+    <blockquote class="blockquote mb-0">
+        <h5 class="card-title">Salon du jeu vidéo de Grenoble </h5>
+      <p>Le programme du salon du jeu vidéo de Grenoble est tombé, l'épisode 2 du HeroFestival accueille ces héros en mode IRL : retrogaming et consoles NewGen partageront la vedette avec l'univers de l'esport et ses champions. </p>
+      <footer class="blockquote-footer">
+        <small class="text-muted">
+          Dernier article sur <cite title="Source Title">retro-gaming.com</cite>
+        </small>
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Pokémon GO, la baston</h5>
+      <p class="card-text">Débutée hier en fin de soirée, l'Épreuve de force met à l'honneur les Pokémon de type Combat, c'est-à-dire notamment Machoc ou encore Makuhita. Ceux-ci apparaîtront plus souvent à l'état sauvage jusqu'au 14 mai.</p>
+      <p class="card-text"><small class="text-muted">Dernière modification il y a 3 minutes</small></p>
+    </div>
+  </div>
+</div>
         </div>

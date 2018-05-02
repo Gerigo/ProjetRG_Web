@@ -1,69 +1,43 @@
-<div class="col-sm-11" id = "cadre">
-    </br>
-    <div id ="cadre3"> Formulaire de contact </div>
-    </br>
-    Vous souhaitez nous contacter ou nous faire part de vos retours ? 
-    Un problème avec votre commande ? Nous nous engagons à vous répondre dans les 24h 
-    </br>
-    </br>
+<div class="row"> </br> </div>
+
+<div class="card" style="width: 32rem;">
+  <div class="card-body">
+    <h5 class="card-title">Nous contacter </h5>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <p class="card-text">Un soucis avec une commande ? Tu veux nous contacter pour nous faire part d'améliorations ? Ou 
+    encore tu souhaites rejoindre l'équipe Retro-gaming ? N'hésite pas à nous contacter par mail, nous nous 
+    efforçerons d'y répondre dans les plus brefs délais.</p>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Envoyer</button>
+   
+  </div>
+</div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="well well-sm">
-                    <form class="form-horizontal" action="" method="post">
-                        <fieldset>
-                            <legend class="text-center">Nous contacter</legend>
-
-                            <div class="form-group">
-                                </br>
-                                <label class="col-md-5 control-label" for="name"> <label for="enquiry">Objet du message :  </label></label>
-                                <select id="raison" name="raison">
-                                    <option value="avis">Je souhaite donner mon avis</option>
-                                    <option value="autre">Problème de commande</option>
-                                    <option value="autre">Erreur de paiement</option>
-                                    <option value="autre">Autre raison</option>
-                                </select>
-                                <br/>
-                            </div>
-                            <!-- Name input-->
-                            <div class="form-group">
-                                <label class="col-md-5 control-label" for="name">Nom</label>
-                                <div class="col-md-9">
-                                    <input id="name" name="name" type="text" placeholder="Entrez le nom" class="form-control">
-                                </div>
-                            </div>
-
-                            <!-- Email input-->
-                            <div class="form-group">
-                                <label class="col-md-5 control-label" for="email">Votre email</label>
-                                <div class="col-md-9">
-                                    <input id="email" name="email" type="text" placeholder="Entrez l'email" class="form-control">
-                                </div>
-                            </div>
-
-                            <!-- Message body -->
-                            <div class="form-group">
-                                <label class="col-md-5 control-label" for="message">Votre message</label>
-                                <div class="col-md-9">
-                                    <textarea class="form-control" id="message" name="message" placeholder="" rows="5"></textarea>
-                                </div>
-                            </div>
-
-                            <!-- Form actions -->
-                            <div class="form-group">
-                                <div class="col-md-12 text-right">
-                                    <button type="submit" class="btn btn-primary btn-lg"><a href="mailto:xfireca@hotmail.com"> </a>Envoyer</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-        </div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nouveau message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Objet du message</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-light "><A HREF="mailto:admin@retro.com">Envoyer</a></button>
+      </div>
     </div>
-
-    </br>
-    </br>
+  </div>
 </div>

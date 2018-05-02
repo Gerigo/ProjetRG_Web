@@ -1,5 +1,3 @@
-<h2>Login administration</h2>
-
 <?php
 if(isset($_GET['submit_login'])){
     
@@ -18,17 +16,41 @@ if(isset($_GET['submit_login'])){
         $_SESSION['admin']=1;
         unset($_SESSION['page']);
         
-        //print "<meta http-equiv=\"refresh\": Content=\"0;URL=../index.php\">";
+       print "<meta http-equiv=\"refresh\": Content=\"0;URL=./admin/pages/accueil_admin.php>";
     }
 }
 ?>
 
 
-<form action=""<?php print $_SERVER['PHP_SELF'];?> method="get">
-    Login : 
-    <input type="text" name="admin" id="admin"/><br/>
-    Password : 
-    <input type="password" name="password" id="password"/><br/>
-    <input type="submit" name="submit_login" id="submit_login" value="Se connecter"/><br/>
+<div class="text-center" style="padding:70px 0">
+    <div class="logo">Se connecter</div>
+    <!-- Main Form -->
+    <div class="login-form-1">
+        <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
+            <form id="login-form" class="text-left">
+                <div class="login-form-main-message"></div>
+                <div class="main-login-form">
+                    <div class="login-group">
+                        <div class="form-group">
+                            <label for="admin" class="sr-only">Login</label>
+                            <input type="admin" class="form-control" id="admin" name="admin">
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Mot de passe</label>
+                            <input type="password" class="form-control" id="password" name="password">
+                        </div>
+                        
+                    </div>
+                     
 
-</form>
+                    <button type="submit" class="btn btn-secondary" name="submit_login" id="submit_login" value="Se connecter">Se connecter</button>
+                      <!--- <input type="submit" button type="button" name="envoyer2" id="envoyer2" value="Connexion" class="btn btn-info">&nbsp; --->
+                </div>
+                <div class="etc-login-form">
+                    <p>new user? <a href="./index.php?page=inscription">S'inscrire</a></p>
+                </div>
+            </form>
+    </div>
+    <!-- end:Main Form -->
+</div>
+

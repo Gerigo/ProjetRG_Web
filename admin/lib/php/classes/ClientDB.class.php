@@ -56,11 +56,11 @@ class ClientDB extends Client {
         }
     }
     
-    function getClient($id) {
+    function getClient($id_client) {
         try {
-            $query = "select * from client where id_cli = :id_cli";
+            $query = "select * from client where id_client = :id_client";
             $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':id_cli', $id);
+            $resultset->bindValue(':id_client', $id_client);
             $resultset->execute();
             $data = $resultset->fetchAll();
 //var_dump($data);

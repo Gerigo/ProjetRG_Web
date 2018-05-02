@@ -1,41 +1,54 @@
-<div class="col-sm-9" id="cadreconnect">
-    </br><h3 id="titre_connexion">Connexion </h3>
 <?php
 if (isset($_POST['envoyer2'])) {
     $log = new ClientDB($cnx);
     $client = $log->isClient($_POST['email3'], $_POST['mdp3']);
+
     if (is_null($client)) {
         
     } else {
         $_SESSION['client'] = 1;
-        $_SESSION['client'] = $client[0]->ID_CLI;
+
+        $_SESSION['mon_client'] = $client[0]->id_client;
         ?>
-        <meta http-equiv = "refresh": content = "0;url=index.php?page=accueil">
+        <meta http-equiv = "refresh": content = "0;url=index.php?page=espaceclient">
         <?php
+        $ok = "Félicitations votre inscription a été cloturée avec succès ";
     }
 }
 ?>
 
-<form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post" id="form_connexion">
-    <div class="row">
-        <div class="col-sm-2"></div>
-        <div class="col-sm-4"> 
-           <b>Entrez votre e-mail : </b><input type="email" id="email3" name="email3" size="30" placeholder="Votre email"/>
-        </div>
-        </br>
-        <div class="col-sm-6">
-            <b>Entrez votre mdp :</b> <input type="password" id="mdp3" name="mdp3" size="30" placeholder="Votre mot de passe"/>
-        </div>
+        
+
+<div class="text-center" style="padding:70px 0">
+    <div class="logo">Se connecter</div>
+    <!-- Main Form -->
+    <div class="login-form-1">
+        <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="post" id="form_connexion">
+            <form id="login-form" class="text-left">
+                <div class="login-form-main-message"></div>
+                <div class="main-login-form">
+                    <div class="login-group">
+                        <div class="form-group">
+                            <label for="email3" class="sr-only">Email</label>
+                            <input type="email" class="form-control" id="email3" name="email3" placeholder="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="mdp3" class="sr-only">Mot de passe</label>
+                            <input type="password" class="form-control" id="mdp3" name="mdp3" placeholder="password">
+                        </div>
+                        <div class="form-group login-group-checkbox">
+                            <input type="checkbox" id="lg_remember" name="lg_remember">
+                            <label for="lg_remember">Se souvenir</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-button" name="envoyer2" id="envoyer2" value="Connexion"><i class="fa fa-chevron-right"></i></button>
+                      <!--- <input type="submit" button type="button" name="envoyer2" id="envoyer2" value="Connexion" class="btn btn-info">&nbsp; --->
+                </div>
+                <div class="etc-login-form">
+                    <p>new user? <a href="./index.php?page=inscription">S'inscrire</a></p>
+                </div>
+            </form>
     </div>
-    </br></br>
-    <div class="row">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-4">
-            <input type="submit" name="envoyer2" id="envoyer2" value="Connexion" class="pull-right">&nbsp;  
-        </div>
-        <div class="col-sm-2">
-            <input type="reset" id="reset2" value="Annuler" class="pull-left"/>
-        </div>
-    </div>
-</form>
+    <!-- end:Main Form -->
 </div>
+

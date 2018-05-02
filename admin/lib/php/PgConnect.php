@@ -1,4 +1,4 @@
 <?php
-$dsn='pgsql:host=localhost;dbname=postgres;port=5432';
+$dsn='pgsql:host=localhost;dbname=Retrogaming;port=5432';
 $user='Guillaume';
 $pass='guillaume';
