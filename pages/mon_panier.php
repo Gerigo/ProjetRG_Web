@@ -5,19 +5,20 @@ if (isset($_SESSION['mon_client'])) {
     $commande_client = $commande->getCommandeClient($_SESSION['mon_client']);
     //var_dump($commande_client);
 }
+
 if (isset($_GET['supprimer'])) {
     $commande = new CommandeDB($cnx);
-    $commande->delCommande(array("id_client" => $_SESSION['mon_client'], "id_jeu" => $_SESSION['id_jeu'], "prix" => $monjeu[0]['prix']));
-
-    print '<center><b>Félicitations cet article a été supprimé</b></center>';
-    ?>
+    $commande->delCommande($_SESSION['mon_client']);     
+    var_dump($commande);
+      ?>
     <meta http-equiv = "refresh": content = "2;url=index.php?page=mon_panier">
     <?php
+   
 }
 ?>
-
-
+ 
 <?php
+    
 $cmp = 0;
 $code = 0;
 $str = 'EXAM';
@@ -28,7 +29,7 @@ for ($i = 0; $i < sizeof($commande_client); $i++) {
     <table class="table table-hover">
         <thead>
             <tr class="table-dark">
-                <th scope="col">Reférence du jeu</th>
+                <th scope="col">Référence du jeu</th>
                 <th scope="col">Votre numéro de client </th>
                 <th scope="col">Prix</th>
                 <th scope="col">Supprimer cet article</th>
@@ -45,7 +46,7 @@ for ($i = 0; $i < sizeof($commande_client); $i++) {
                     $cmp = $cmp + ($commande_client[$i]['prix']);
                     ?></td>
                 <td>  
-                    <input type="submit" button type="button" name="supprimer" id="supprimer" value="supprimer" class="btn btn-danger">&nbsp;  </td>
+                    <input type="submit" button type="button" name="supprimer" id="supprimer" value="Supprimer du panier" class="btn btn-danger">&nbsp;  </td>
                 </td>
             </tr>
         </tbody>
@@ -58,7 +59,7 @@ for ($i = 0; $i < sizeof($commande_client); $i++) {
 print '<center><b>Montant total du panier : ' . $cmp . ' €</b></center>';
 ?>
 
-<a href='./pages/imprimer.php' target='_blank'>imprimer</a>
+
 
 
 
@@ -259,3 +260,5 @@ print '<center><b>Montant total du panier : ' . $cmp . ' €</b></center>';
             </div>
         </div>
     </div>
+    
+</div>

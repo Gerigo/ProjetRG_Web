@@ -12,7 +12,7 @@ if (isset($_POST['envoyer2'])) {
         ?>
         <meta http-equiv = "refresh": content = "0;url=index.php?page=espaceclient">
         <?php
-        $ok = "Félicitations votre inscription a été cloturée avec succès ";
+
     }
 }
 ?>

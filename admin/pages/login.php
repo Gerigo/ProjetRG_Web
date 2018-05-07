@@ -1,9 +1,11 @@
 <?php
 if(isset($_GET['submit_login'])){
+    //if isset $_POST
     
     //var_dump($_GET);
     //pour pouvoir utiliser les donnes hors du tab $_get
     extract($_GET,EXTR_OVERWRITE);
+    //extract $_POST 
     $log= new AdminDB($cnx);
     //var_dump($log); 
     $admin=$log->getAdmin($admin, $password);
@@ -27,6 +29,7 @@ if(isset($_GET['submit_login'])){
     <!-- Main Form -->
     <div class="login-form-1">
         <form action="<?php print $_SERVER['PHP_SELF']; ?>" method="get">
+            <!---   <form action=" method="post"> --->
             <form id="login-form" class="text-left">
                 <div class="login-form-main-message"></div>
                 <div class="main-login-form">

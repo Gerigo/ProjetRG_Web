@@ -11,7 +11,7 @@ class CommandeDB extends Commande {
 
     public function addCommande(array $data) {
 
-       try {
+        try {
             $query = "insert into commande (id_client,id_jeu,prix) values (:id_client,:id_jeu,:prix)";
 
             //var_dump($query);
@@ -50,25 +50,22 @@ class CommandeDB extends Commande {
         }
         return $_infoArray;
     }
-    
-    public function delCommande(array $data) {
 
-       try {
-            $query = "delete from commande (id_client,id_jeu,prix) values (:id_client,:id_jeu,:prix)";
+    public function delCommande($id) {
+
+        try {
+            $query = "delete from commande where id_jeu = :id_jeu";
 
             var_dump($query);
             $resultset = $this->_db->prepare($query);
-            $resultset->bindValue(':id_client', $data['id_client'], PDO::PARAM_STR);
-            $resultset->bindValue(':id_jeu', $data['id_jeu'], PDO::PARAM_STR);
-            $resultset->bindValue(':prix', $data['prix'], PDO::PARAM_STR);
+            $resultset->bindValue(':id_jeu',$id);
             $resultset->execute();
             //$retour = $resultset->fetchColumn(0);
             //return $retour;
         } catch (PDOException $e) {
-            print "<br/>Echec de l'insertion";
+            print "<br/>Echec de la suppression";
             print $e->getMessage();
         }
     }
 
-}  
-    
+}

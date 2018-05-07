@@ -4,15 +4,9 @@ $cnx = Connexion :: getInstance($dsn, $user, $pass);
 session_start();
 ?>
 <html>
-    <head>
-
-    <html>
         <head>
-            <title id="titremain">Retro gaming</title>
-        <header>        
-
-        </header>
-        <h2 id="titrepr"> Retro gaming </h2>
+            <title id="titremain">G-ming</title>       
+   
         <link rel="stylesheet" type="text/css" href="admin/lib/css/bootstrap-4.0.0/dist/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="admin/lib/css/mycss.css" />
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
@@ -23,13 +17,6 @@ session_start();
         <script src="admin/lib/css/bootstrap-4.0.0-beta-dist/js/bootstrap.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" ></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"></script>
-        <script src="admin/lib/js/gt_functionsVal.js"></script>
-        <script src="admin/lib/js/gt_function.js"></script>
-        <script type="text/javascript" href="admin/lib/js/gt_functionsVal.js" ></script>
-        <script type="text/javascript" href="admin/lib/js/gt_function.js" ></script>
-        <script language="javascript" src="lib/js/jquery-3.3.1.js"></script>
-        <script language="javascript" src="admin/lib/js/boostrap.js"></script>
-        <script language="javascript" src="admin/lib/js/boostrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>      
@@ -41,38 +28,14 @@ session_start();
         <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-        <?php
-        $fichierJs = array();
-        $i = 0;
-        foreach (glob('./admin/lib/js/jquery/*.js') as $js) {
-            $fichierJs[$i] = $js;
-            $i++;
-        }
-        ?>
-
-        <head>
-            <?php
-            foreach ($fichierJs as $js) {
-                ?><script src="<?php print $js; ?>" type="text/javascript"></script>
-                <?php
-            }
-            ?>
-            <script src="./admin/lib/js/fonctionJquery.js"></script>
-
-        </head>
+    
 
         <meta charset="utf8"/>
 
-    </head>
+        </head>
 
     <body>
-        <div class="container">
-            <header>  <div class="container">
-
-                </div>
-            </header> 
-        </div>
-
+   
         <div class="container2">
             <nav>
                 <?php

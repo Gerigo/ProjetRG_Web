@@ -69,4 +69,14 @@
     </div>
   </div>
 </div>
-        </div>
+<div class="media">
+  <img class="align-self-start mr-3" src="./admin/images/godw.jpg" alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0">A aventure coup de poing, succès fracassant.</h5>
+    <p> </p>
+    <p>Le dernier blockbuster en date de Sony, le jeu d’action et de combat God of War, s’est écoulé à plus de 3,1 millions d’exemplaires lors de son lancement, le 20 avril, et ce en seulement trois jours, a révélé le constructeur japonais jeudi 3 mars. Le jeu raconte l’épopée musclée du demi-dieu Kratos et de son fils Atreus dans les terres glaciales d’Asgaard.
+La superproduction développée par Sony Santa Monica (Californie) bat le record du meilleur lancement pour un jeu édité par le constructeur japonais. 
+</p><p>A titre de comparaison, le jeu de survie en monde ouvert Horizon : Zero Dawn (2017) avait trouvé 2,6 millions d’acquéreurs en deux semaines, et le jeu d’aventure cinématographique Uncharted 4 : A Thief’s End (2016), 2,7 millions en sept jours. Elle profite également de l’accroissement du parc de PlayStation 4, passé de 35 millions de consoles au début de 2016 à 76 millions au 31 mars 2018.
+</p>
+  </div>
+</div>

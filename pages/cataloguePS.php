@@ -57,5 +57,5 @@ $nbrJeux = count($liste_jeux);
     <?php
 }
 ?>
-
+<a href='./pages/imprimer.php' target='_blank'>Imprimer la liste des jeux</a>
 </div>  

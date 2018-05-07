@@ -57,5 +57,5 @@ for ($i = 0; $i < $nbrJeux; $i++) {
     <?php
 }
 ?>
-
+<a href='./pages/imprimer.php' target='_blank'>Imprimer la liste des jeux</a>
 </div>  

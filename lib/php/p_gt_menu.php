@@ -3,7 +3,7 @@ if (isset($_SESSION['client'])) {
     ?>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <a class="navbar-brand" href="#">Navigation</a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,10 +23,7 @@ if (isset($_SESSION['client'])) {
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="./index.php?page=cataloguePS">Jeux PS4</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./index.php?page=catalogueXBOX">Jeux XBOX</a>
- 
-   
-                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./index.php?page=catalogueXBOX">Jeux XBOX</a>                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./index.php?page=cataloguePC">Jeux PC </a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./index.php?page=catalogue">Tous les jeux </a>
@@ -38,7 +35,7 @@ if (isset($_SESSION['client'])) {
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="./index.php?page=espaceclient">Mon profil</a>
-          
+
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./admin/pages/disconnect.php">Me déconnecter</a>
                     </div>
@@ -54,7 +51,7 @@ if (isset($_SESSION['client'])) {
 <?php } else {
     ?>
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <a class="navbar-brand" href="#">Navigation</a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -74,11 +71,10 @@ if (isset($_SESSION['client'])) {
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="./index.php?page=cataloguePS">Jeux PS4</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./index.php?page=catalogueXBOX">Jeux XBOX</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="./index.php?page=catalogueXBOX">Jeux XBOX</a>
-                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./index.php?page=catalogueXBOX">Jeux XBOX</a>                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="./index.php?page=cataloguePC">Jeux PC </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./index.php?page=catalogue">Tous les jeux </a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
