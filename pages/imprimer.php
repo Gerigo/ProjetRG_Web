@@ -27,7 +27,7 @@ $y = 3;
 $x = 3;
 for ($i = 0; $i < $nbrJeux; $i++) {
     $pdf->SetXY($x, $y);
-    //$pdf->SetX($x);
+    $pdf->SetX($x);
     $pdf->Cell(5, 3.5, utf8_decode($liste_jeux[$i]['console']), 1, 0, 'L');
     $pdf->SetXY($x + 8.5, $y++);
     $y += 2;

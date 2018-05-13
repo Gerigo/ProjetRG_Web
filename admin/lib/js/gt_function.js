@@ -1,4 +1,7 @@
-/*gt_function.js*/
+/*gt_function.js*
+ * 
+ * Fonctions JS alertes
+ */
 $(document).ready(function () {
 
     $("#acheter").click(function () {

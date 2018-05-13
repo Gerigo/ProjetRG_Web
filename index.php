@@ -6,7 +6,7 @@ session_start();
 <html>
         <head>
             <title id="titremain">G-ming</title>       
-   
+  <!--Vérifier les redondances --> 
         <link rel="stylesheet" type="text/css" href="admin/lib/css/bootstrap-4.0.0/dist/css/bootstrap.css"/>
         <link rel="stylesheet" type="text/css" href="admin/lib/css/mycss.css" />
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
