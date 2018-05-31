@@ -78,5 +78,7 @@
 La superproduction développée par Sony Santa Monica (Californie) bat le record du meilleur lancement pour un jeu édité par le constructeur japonais. 
 </p><p>A titre de comparaison, le jeu de survie en monde ouvert Horizon : Zero Dawn (2017) avait trouvé 2,6 millions d’acquéreurs en deux semaines, et le jeu d’aventure cinématographique Uncharted 4 : A Thief’s End (2016), 2,7 millions en sept jours. Elle profite également de l’accroissement du parc de PlayStation 4, passé de 35 millions de consoles au début de 2016 à 76 millions au 31 mars 2018.
 </p>
+
+
   </div>
 </div>

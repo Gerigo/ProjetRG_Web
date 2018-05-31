@@ -2,6 +2,7 @@
 require './admin/lib/php/adm_list_include.php';
 $cnx = Connexion :: getInstance($dsn, $user, $pass);
 session_start();
+//var_dump($cnx);
 ?>
 <html>
         <head>

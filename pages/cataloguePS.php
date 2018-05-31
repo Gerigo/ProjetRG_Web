@@ -39,7 +39,7 @@ $nbrJeux = count($liste_jeux);
         print utf8_decode($liste_jeux[$i]['prix']);
         ?>€</td>
       <td>  <?php 
-          if (isset($_SESSION['client'])) {
+          if (isset($_SESSION['client']) OR isset($_SESSION['admin'])) {
           ?>
           <a href="index.php?page=commande&id=<?php print $liste_jeux[$i]['id_jeu']; ?>">
           Ajouter au panier

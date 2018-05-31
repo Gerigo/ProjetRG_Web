@@ -27,7 +27,7 @@
                     toute recopie partielle ou totale doit être précédée d'une demande via admin@retro-gaming.com.</p></h5>
             </li>
             <li class="list-inline-item">
-                <a href="#!" class="btn btn-danger btn-rounded">Likez nous</a>
+                <a href="https://facebook.com" target=_blank class="btn btn-danger btn-rounded">Likez nous</a>
             </li>
         </ul>
     </div>

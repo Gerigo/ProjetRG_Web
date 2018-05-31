@@ -33,6 +33,7 @@ if (isset($_SESSION['mon_client'])) {
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
                    <center> <h4 class="modal-title" id="myModalLabel">à propos de moi </h4></center>
                     </div>
