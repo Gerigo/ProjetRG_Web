@@ -51,14 +51,15 @@ class CommandeDB extends Commande {
         return $_infoArray;
     }
 
-    public function delCommande($id) {
+    public function delCommande($id_client_,$id_jeu) {
 
         try {
-            $query = "delete from commande where id_jeu = :id_jeu";
+            $query = "delete from commande where id_jeu = :id_jeu and id_client = :id_client";
 
             var_dump($query);
             $resultset = $this->_db->prepare($query);
             $resultset->bindValue(':id_jeu',$id);
+            $resultset->bindValue(':id_client',$id_client);
             $resultset->execute();
             //$retour = $resultset->fetchColumn(0);
             //return $retour;

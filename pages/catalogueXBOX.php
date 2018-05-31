@@ -6,15 +6,14 @@ $nbrJeux = count($liste_jeux);
 //var_dump($liste_jeux);
 ?>
 
-        
-    <?php
-    for ($i = 0; $i < $nbrJeux; $i++) {
-        ?>
+
 
  </br></br>
 <table class="table table-hover table-dark">
   <thead>
     <tr>
+                
+    
       <th scope="col">#</th>
       <th scope="col">Plateforme</th>
       <th scope="col">Nom du jeu </th>
@@ -25,6 +24,9 @@ $nbrJeux = count($liste_jeux);
   </thead>
   <tbody>
     <tr>
+        <?php
+    for ($i = 0; $i < $nbrJeux; $i++) {
+        ?>
       <th scope="row"><img src="./admin/images/<?php print $liste_jeux[$i]['image'] ?>" alt="Jeux"/></th>
       <td> <?php
         print utf8_decode($liste_jeux[$i]['console']);
@@ -50,12 +52,13 @@ $nbrJeux = count($liste_jeux);
          
         ?></td>
     </tr>
+        <?php
+}
+?>
       </tbody>
 </table>
 
 
-    <?php
-}
-?>
+
 <a href='./pages/imprimer.php' target='_blank'>Imprimer la liste des jeux</a>
     </div>  
